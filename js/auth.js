@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api'; // Adjust for your backend
+const API_BASE = 'https://brixai-backend1-2.onrender.com/api'; // Adjust for your backend
 
 function showTab(tab) {
   document.getElementById('login-tab').style.display = tab === 'login' ? 'block' : 'none';
@@ -59,3 +59,4 @@ async function registerUser() {
     alert('Registration failed');
   }
 }
+
