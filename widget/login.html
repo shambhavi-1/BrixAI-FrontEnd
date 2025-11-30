@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BrixAI - Login/Register</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+<div class="container">
+  <div class="welcome-section">
+    <h1>Welcome to <span style="color:#005eff;">BrixAI</span></h1>
+    <p>Smart Construction Management Suite</p>
+  </div>
+
+  <div class="auth-tabs">
+    <button class="tab-btn active" onclick="showTab('login')">Login</button>
+    <button class="tab-btn" onclick="showTab('register')">Register</button>
+  </div>
+
+  <div id="login-tab" class="auth-form">
+    <h2>Login</h2>
+    <div class="input-group">
+      <input id="login-email" placeholder="Email" />
+      <input id="login-password" type="password" placeholder="Password" />
+    </div>
+    <button class="button" onclick="loginUser()">Login</button>
+  </div>
+
+  <div id="register-tab" class="auth-form" style="display:none;">
+    <h2>Create Account</h2>
+    <div class="input-group">
+      <input id="reg-name" placeholder="Full Name" />
+      <input id="reg-email" placeholder="Email" />
+      <input id="reg-password" type="password" placeholder="Password" />
+      <select id="reg-role">
+        <option value="labor">Labor</option>
+        <option value="mistri">Supervisor (Mestri)</option>
+        <option value="engineer">Engineer</option>
+        <option value="manager">Manager</option>
+      </select>
+    </div>
+    <button class="button" onclick="registerUser()">Register</button>
+  </div>
+</div>
+
+<script src="./js/auth-demo.js"></script>
+</body>
+</html>

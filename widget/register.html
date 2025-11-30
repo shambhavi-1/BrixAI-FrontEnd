@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register | BrixAI</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+<div class="card slide">
+  <h2>Create Account</h2>
+
+  <div class="input-group">
+    <input id="name" placeholder="Full Name" />
+    <input id="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+
+    <select id="role">
+      <option value="labor">Labor</option>
+      <option value="supervisor">Supervisor</option>
+      <option value="engineer">Engineer</option>
+      <option value="admin">Admin</option>
+    </select>
+  </div>
+
+  <button class="button" onclick="registerUser()">Register</button>
+
+  <div class="link">
+    <a href="login.html">Already have an account?</a>
+  </div>
+</div>
+
+<script src="./js/auth.js"></script>
+</body>
+</html>
